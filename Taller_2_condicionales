@@ -1,0 +1,84 @@
+menu=""""Taller 2 Condicionales, ejercicios del 17 al 33 correspondiente a condicionales"""
+print(menu)
+option=input(" Digita el codigo del ejercicio: ")
+if option =="17":
+  number=int(input("Digita un numero y el sistema le indica si es un negativo o positivo: "))
+  if number<0:
+    print("El numero: ", number, " escrito en pantalla es negativo. ")
+  else:
+    print("El numero: ", number, " escrito en pantalla es positivo. ")
+if option =="18":
+  number1=int(input("Digita dos numeros y el sistema indica cual es el mayor y cual es el menor : "))
+  number2=int(input("Digita el segundo numero: "))
+  if number2>number1:
+    print("El ",number1," es menor y ",number2," es el mayor")
+  else:
+    print("El ",number1," es mayor y ",number2," es el menor")
+if option=="19":
+ number1 = float (input ("Ingresa el primer valor: "))
+number2 = float (input ("Ingresa el segundo valor: "))
+number3 = float (input ("Ingresa el tercer valor: "))
+if number1>number2:
+    mayor=number1
+    menor=number2
+else:
+    mayor=number2
+    menor=number1
+if mayor<number3:
+    mayor=number3
+if menor>number3:
+    menor=number3
+print ("Valor de mayor: " + repr (mayor))
+print ("Valor de menor: " + repr (menor))
+print ()
+if option=="20":
+  name=str(input("Digita su nombre "))
+  horas_lab=float(input("Digite las horas laboradas: "))
+  horas_ext=float(input("Digita las horas extras: "))
+  sueldo=float((horas_lab*4)+(horas_ext+horas_ext))
+  print("El sueldo total de ",name," es ",sueldo)
+
+if option=="21":
+  number1=int(input("Digita el primer numero: "))
+  number2=int(input("Digita el segundo numero: "))
+  if number1<number2:
+    number3=int(number1+number2)
+    print("El primer numero es menor por lo tanto la suma es ",number3)
+  else:
+    number3=(number1-number2)
+    print("El segundo numero es menor por lo tanto la resta es ",number3)
+
+if option =="22":
+  number1=int(input("Digita el primer numero: "))
+  number2=int(input("Digita el segundo numero: "))
+  cociente=int(number1/number2)
+  if cociente==0:
+    print("La division no se puede hacer")
+  else:
+    print("El resultado de la division es ",cociente)
+
+if option=="23":
+  dia=["lunes","martes","miercoles","jueves","viernes","sabado","domingo"];
+  numdia=int(input("ingresa un numero: "))
+  if numdia<=7:
+    print(str(dia[numdia-1]))
+
+    
+if option=="24":
+  date1=int(input("Digita la primera longitud: "))
+  date2=int(input("Digita la segunda longitud: "))
+  date3=int(input("Digita la tercera longitud: "))
+  if date1==date2 and date2==date3:
+    print("si es equilatero")
+  else:
+    print("no es equilatero")
+
+if option=="25":
+  number1=int(input("Digita el primer numero: "))
+  number2=int(input("Digita el segundo numero: "))
+  if number1<0 or number2<0:
+    number3=int(number1*number2)
+    print("Uno de los numeros dados son negativos por lo tanto la multiplicacion es ", number3)
+  else:
+    number3=number1+number2
+    print("los dos son positivos por lo tanto la suma es ",number3)
